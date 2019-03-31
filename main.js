@@ -8,6 +8,7 @@ var g1 = {
       money-=this.cost
       this.amount++
       this.cost = Math.round(this.cost*1.1)
+      document.getElementById("money").textContent = "You have " + money + " points."
       document.getElementById("gen1Amount").textContent = "You have " + g1.amount + " G1's."
       document.getElementById("gen1Cost").textContent = "It costs " + g1.cost + " points to buy a G1."
     }
