@@ -2,7 +2,7 @@ var money = 10
 var g1 = {
   amount: 0,
   cost: 0,
-  :function buy() {
+  buy: function() {
     if(money < g1.cost) return 0;
     if(money >= g1.cost) {
       money-=g1.cost
