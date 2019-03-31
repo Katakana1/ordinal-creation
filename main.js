@@ -3,11 +3,11 @@ var g1 = {
   amount: 0,
   cost: 0,
   buy: function() {
-    if(money < g1.cost) return 0;
-    if(money >= g1.cost) {
-      money-=g1.cost
-      g1.amount++
-      g1.cost = Math.round(g1.cost*1.1)
+    if(money < this.cost) return 0;
+    if(money >= this.cost) {
+      money-=this.cost
+      this.amount++
+      this.cost = Math.round(this.cost*1.1)
     }
   }
 }
