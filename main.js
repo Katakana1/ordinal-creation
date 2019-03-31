@@ -1,5 +1,5 @@
-var clicks = 0
+var money = 0
 function increase() {
   clicks++
-  document.getElementById("clicks").textContent = "Clicks: " + clicks
+  document.getElementById("money").textContent = "Points: " + money
 }
