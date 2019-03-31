@@ -4,7 +4,7 @@ var g1 = {
   cost: 0,
   :function buy() {
     if(money < g1.cost) return 0;
-    if(money > g1.cost) {
+    if(money >= g1.cost) {
       money-=g1.cost
       g1.amount++
       g1.cost = Math.round(g1.cost*1.1)
