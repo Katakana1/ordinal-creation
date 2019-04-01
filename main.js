@@ -32,7 +32,7 @@ function gameLoop(){
   var diff = (Date.now()-lastUpdate)/1000
   tick(diff)
   updateThings()
-  lastUpdate = Date.now()
+  let lastUpdate = Date.now()
 }
 setInterval(gameLoop,50)
 document.getElementById("money").textContent = "You have " + money + " points."
