@@ -8,9 +8,6 @@ var g1 = {
       money-=g1.cost
       g1.amount++
       g1.cost = Math.round(g1.cost*1.1)
-      document.getElementById("money").textContent = "You have " + format(money) + " points."
-      document.getElementById("gen1Amount").textContent = "You have " + format(g1.amount) + " G1's."
-      document.getElementById("gen1Cost").textContent = "It costs " + format(g1.cost) + " points to buy a G1."
     }
   }
 }
@@ -33,6 +30,3 @@ function gameLoop(){
   updateThings()
 }
 setInterval(gameLoop,50)
-document.getElementById("money").textContent = "You have " + format(money) + " points."
-document.getElementById("gen1Amount").textContent = "You have " + format(g1.amount) + " G1's."
-document.getElementById("gen1Cost").textContent = "It costs " + format(g1.cost) + " points to buy a G1."
