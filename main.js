@@ -34,7 +34,7 @@ function format(num){
   let power = Math.floor(Math.log10(num))
   let mantissa = num/Math.pow(10,power)
   if(power < 8) return Math.round(num)
-  if(power > 8) return mantissa.toFixed(2) + " * 10^" + power
+  if(power >= 8) return mantissa.toFixed(2) + " * 10^" + power
 }
 function tick(diff){
   money+=(g1.amount*diff)
