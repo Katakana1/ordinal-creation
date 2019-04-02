@@ -1,22 +1,9 @@
-body {
-  background-color: black;
-}
-
-h1 {
-  color: rgb(127, 127, 255);
+.genButton {
+  border: 2px solid blue;
+  background color: white;
   text-align: center;
-  font-family: arial;
-}
-
-p {
-  color: white;
-  font-family: arial;
-  font-size: 20px;
-}
-
-div {
-  color: white;
-  text-align: center;
-  font-family: arial;
-  font-size: 25px;
+  width: 100px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
 }
