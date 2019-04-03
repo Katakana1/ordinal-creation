@@ -89,8 +89,8 @@ function updateThings() {
   document.getElementById("gen4Cost").textContent = "Cost: " + format(g4.cost)
   document.getElementById("gen5Amount").textContent = "You have " + format(g5.amount) + " G5's."
   document.getElementById("gen5Cost").textContent = "Cost: " + format(g5.cost)
-  document.getElementById("prestMult").textContent = "Current multiplier: " + prestige.mult
-  document.getElementById("pendMult").textContent = "Pending multiplier: " + prestige.pending
+  document.getElementById("prestMult").textContent = "Current multiplier: " + prestige.mult + "x"
+  document.getElementById("pendMult").textContent = "Pending multiplier: " + prestige.pending + "x"
 }
 function format(num){
   let power = Math.floor(Math.log10(num))
