@@ -115,7 +115,7 @@ function tick(diff){
   g2.amount+=(g3.amount*diff)*prestige.mult
   g3.amount+=(g4.amount*diff)*prestige.mult
   g4.amount+=(g5.amount*diff)*prestige.mult
-  prestige.pending=(Math.pow(money/1e10,0.166666)
+  prestige.pending=(Math.pow(money/1e10,0.166666))
 }
 function gameLoop(){
   tick(1/60)
