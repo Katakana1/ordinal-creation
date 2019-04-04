@@ -63,18 +63,20 @@ var prestige = {
   pending: 1,
   mult: 1,
   reset: function(){
-    money = 10
-    g1.amount = 0
-    g1.cost = 10
-    g2.amount = 0
-    g2.cost = 1000
-    g3.amount = 0
-    g3.cost = 100000
-    g4.amount = 0
-    g4.cost = 1e8
-    g5.amount = 0
-    g5.cost = 1e10
-    this.mult = this.pending
+    if(this.pending > this.mult){
+      money = 10
+      g1.amount = 0
+      g1.cost = 10
+      g2.amount = 0
+      g2.cost = 1000
+      g3.amount = 0
+      g3.cost = 100000
+      g4.amount = 0
+      g4.cost = 1e8
+      g5.amount = 0
+      g5.cost = 1e10
+      this.mult = this.pending
+    }
   }
 }
 function updateThings() {
