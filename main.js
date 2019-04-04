@@ -89,8 +89,17 @@ function updateThings() {
   document.getElementById("gen4Cost").textContent = "Cost: " + format(g4.cost)
   document.getElementById("gen5Amount").textContent = "You have " + format(g5.amount) + " G5's."
   document.getElementById("gen5Cost").textContent = "Cost: " + format(g5.cost)
-  document.getElementById("prestMult").textContent = "Current multiplier: " + prestige.mult + "x"
-  document.getElementById("pendMult").textContent = "Pending multiplier: " + prestige.pending + "x"
+  if(prestige.pending < prestige.mult){
+    document.getElementById("pendMult").innerHTML = "Watch out! You can't prestige yet!<br>You can prestige with " + format((Math.pow(prestige.mult,6))*1e10) + " points."
+  } else if(prestige.pending < 1000){
+    document.getElementById("pendMult").textContent = "Pending multiplier: " + prestige.pending.toFixed(2) + "x"
+  } else {
+    document.getElementById("pendMult").textContent = "Pending multiplier: " + format(prestige.pending) + "x"
+  if(prestige.mult < 1000){
+    document.getElementById("prestMult").textContent = "Prestige multiplier: " + prestige.mult.toFixed(2) + "x"
+  } else {
+    document.getElementById("prestMult").textContent = "Prestige multiplier: " + format(prestige.mult) + "x"
+  }
 }
 function format(num){
   let power = Math.floor(Math.log10(num))
@@ -104,7 +113,7 @@ function tick(diff){
   g2.amount+=(g3.amount*diff)*prestige.mult
   g3.amount+=(g4.amount*diff)*prestige.mult
   g4.amount+=(g5.amount*diff)*prestige.mult
-  prestige.pending=Math.pow(money,0.16)
+  prestige.pending=(Math.pow(money/1e10,0.166666)
 }
 function gameLoop(){
   tick(1/60)
