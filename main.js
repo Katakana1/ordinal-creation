@@ -119,7 +119,7 @@ function tick(diff){
   prestige.pending=(Math.pow(money/1e10,0.166666))
 }
 function gameLoop(){
-  tick(1/60)
+  tick(1/30)
   updateThings()
 }
-setInterval(gameLoop,16.6)
+setInterval(gameLoop,33.3)
