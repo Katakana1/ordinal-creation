@@ -3,20 +3,17 @@
   <title>Ordinal Creation</title>
 </head>
 <body>
-  <h1>
-  Ordinal Creation! (OCI)
-  </h1>
-  <button class = "genButton" onclick = "g1.buy()">Buy a generator. (G1) <div id="gen1Cost">Cost: 10</div></button>
-  <div id="money">You have 10 points.</div>
-  <div id="gen1Amount">You have 0 G1's.</div>
-  <button class = "genButton" onclick = "g2.buy()">Buy a generator. (G2) <div id="gen2Cost">Cost: 1000</div></button>
-  <div id="gen2Amount">You have 0 G2's.</div>
-  <button class = "genButton" onclick = "g3.buy()">Buy a generator. (G3) <div id="gen3Cost">Cost: 100000</div></button>
-  <div id="gen3Amount">You have 0 G3's.</div>
-  <button class = "genButton" onclick = "g4.buy()">Buy a generator. (G4) <div id="gen4Cost">Cost: 1.00 * 10^8</div></button>
-  <div id="gen4Amount">You have 0 G4's.</div>
-  <button class = "genButton" onclick = "g5.buy()">Buy a generator. (G5) <div id="gen5Cost">Cost: 1.00 * 10^10</div></button>
-  <div id="gen5Amount">You have 0 G5's.</div>
+  <button onclick = "g1.buy()">Buy a generator. (G1) <div id="gen1Cost">Cost: 10</div></button>
+  <div class = "generator" id="money">You have 10 points.</div>
+  <div class = "generator" id="gen1Amount">You have 0 G1's.</div>
+  <button onclick = "g2.buy()">Buy a generator. (G2) <div id="gen2Cost">Cost: 1000</div></button>
+  <div class = "generator" id="gen2Amount">You have 0 G2's.</div>
+  <button onclick = "g3.buy()">Buy a generator. (G3) <div id="gen3Cost">Cost: 100000</div></button>
+  <div class = "generator" id="gen3Amount">You have 0 G3's.</div>
+  <button onclick = "g4.buy()">Buy a generator. (G4) <div id="gen4Cost">Cost: 1.00 * 10^8</div></button>
+  <div class = "generator" id="gen4Amount">You have 0 G4's.</div>
+  <button onclick = "g5.buy()">Buy a generator. (G5) <div id="gen5Cost">Cost: 1.00 * 10^10</div></button>
+  <div class = "generator" id="gen5Amount">You have 0 G5's.</div>
   <button onclick = "prestige.reset()">Prestige! <div id="pendMult">Watch out! You can't prestige yet!<br>You can prestige with 1.00 * 10^10 points.</div></button>
   <div id="prestMult">Prestige Multiplier: 1.00x</div>
 </body>
