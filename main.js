@@ -97,6 +97,7 @@ function updateThings() {
     document.getElementById("pendMult").textContent = "Pending multiplier: " + prestige.pending.toFixed(2) + "x"
   } else {
     document.getElementById("pendMult").textContent = "Pending multiplier: " + format(prestige.pending) + "x"
+  }
   if(prestige.mult < 1000){
     document.getElementById("prestMult").textContent = "Prestige multiplier: " + prestige.mult.toFixed(2) + "x"
   } else {
