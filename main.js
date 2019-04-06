@@ -80,7 +80,7 @@ var prestige = {
   }
 }
 function updateThings() {
-  document.getElementById("money").textContent = "You have " + format(money) + " points."
+  document.getElementById("money").textContent = "You have " + format(money) + " points, with " + format(g1.amount * prestige.mult) + "/s."
   document.getElementById("gen1Amount").textContent = "You have " + format(g1.amount) + " G1's."
   document.getElementById("gen1Cost").textContent = "Cost: " + format(g1.cost)
   document.getElementById("gen2Amount").textContent = "You have " + format(g2.amount) + " G2's."
