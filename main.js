@@ -81,13 +81,13 @@ var prestige = {
 }
 function updateThings() {
   document.getElementById("money").textContent = "You have " + format(money) + " points, with " + format(g1.amount * prestige.mult) + "/s."
-  document.getElementById("gen1Amount").textContent = "You have " + format(g1.amount) + " G1's."
+  document.getElementById("gen1Amount").textContent = "You have " + format(g1.amount) + " G1's, with " + format(g2.amount * prestige.mult) + "/s."
   document.getElementById("gen1Cost").textContent = "Cost: " + format(g1.cost)
-  document.getElementById("gen2Amount").textContent = "You have " + format(g2.amount) + " G2's."
+  document.getElementById("gen2Amount").textContent = "You have " + format(g2.amount) + " G2's, with " + format(g3.amount * prestige.mult) + "/s."
   document.getElementById("gen2Cost").textContent = "Cost: " + format(g2.cost)
-  document.getElementById("gen3Amount").textContent = "You have " + format(g3.amount) + " G3's."
+  document.getElementById("gen3Amount").textContent = "You have " + format(g3.amount) + " G3's, with " + format(g4.amount * prestige.mult) + "/s."
   document.getElementById("gen3Cost").textContent = "Cost: " + format(g3.cost)
-  document.getElementById("gen4Amount").textContent = "You have " + format(g4.amount) + " G4's."
+  document.getElementById("gen4Amount").textContent = "You have " + format(g4.amount) + " G4's, with " + format(g5.amount * prestige.mult) + "/s."
   document.getElementById("gen4Cost").textContent = "Cost: " + format(g4.cost)
   document.getElementById("gen5Amount").textContent = "You have " + format(g5.amount) + " G5's."
   document.getElementById("gen5Cost").textContent = "Cost: " + format(g5.cost)
